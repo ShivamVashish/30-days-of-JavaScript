@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-500 font-['Roboto'] flex justify-center items-center min-h-screen">
+    <section class="w-full max-w-xl p-4 md:p-8">
+        <div class="bg-gray-800 rounded-lg shadow-xl p-6 md:p-8 text-center">
+            <div class="mb-3">
+                <h1 class="font-bold text-3xl md:text-5xl text-white">
+                    Dice Game
+                </h1>
+            </div>
+
+            <div class="flex justify-between items-center space-x-4 md:space-x-8">
+                
+                <div id="player--0" class="flex flex-col items-center p-4 w-1/2">
+                    <h2 class="text-xl font-bold text-white mb-2">Player 1</h2>
+                    <p id="score--0" class="text-5xl font-extrabold text-white mb-4">0</p>
+                    <div class="bg-white text-black py-2 px-3 rounded-md w-28">
+                        <p class="text-xl font-bold">Current</p>
+                        <p id="current--0" class="text-2xl font-bold mt-1">0</p>
+                    </div>
+                </div>
+                
+                <div id="player--1" class="flex flex-col items-center p-4 w-1/2 opacity-60">
+                    <h2 class="text-xl font-bold text-white mb-2">Player 2</h2>
+                    <p id="score--1" class="text-5xl font-extrabold text-white mb-4">0</p>
+                    <div class="bg-white text-black py-2 px-3 rounded-md w-28">
+                        <p class="text-xl font-bold">Current</p>
+                        <p id="current--1" class="text-2xl font-bold mt-1">0</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center mt-6 space-y-4">
+                <img src="./dice1.png" alt="dice" id="dice-img" class="w-16 h-16 md:w-20 md:h-20 border border-white rounded-xl">
+                
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                    <button id="btn--new" class="bg-gray-400 text-gray-800 px-4 py-2 rounded-full font-bold text-sm transition-all hover:bg-gray-500">
+                        🔄 New Game
+                    </button>
+                    <button id="btn--roll" class="bg-indigo-600 text-white px-4 py-2 rounded-full font-bold text-sm transition-all hover:bg-indigo-700">
+                        🎲 Roll Dice
+                    </button>
+                    <button id="btn--hold" class="bg-green-600 text-white px-4 py-2 rounded-full font-bold text-sm transition-all hover:bg-green-700">
+                        📥 Hold
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <h1 id="message" class="font-bold text-3xl md:text-5xl p-4 rounded-xl inline-block bg-gray-800 text-white"></h1>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
