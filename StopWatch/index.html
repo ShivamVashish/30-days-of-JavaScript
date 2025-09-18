@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-gray-500 flex justify-center items-center h-full h-screen text-white font-bold flex-col">
+    <div id="stopwatch" class="bg-black m-5 p-8 flex justify-center items-center rounded-xl max-w-[90%]">
+        <div id="timerdisplay" class="text-3xl whitespace-nowrap sm:text-6xl">00 : 00 : 00 : 00</div>
+    </div>
+    <div class="mt-4 flex flex-col sm:flex-row">
+            <button id="stop-btn" class="bg-red-600 m-2 p-2 rounded-xl text-3xl">Stop</button>
+            <button id="start-btn" class="bg-green-600 m-2 p-2 rounded-xl text-3xl">Start</button>
+            <button id="reset-btn" class="bg-blue-800 m-2 p-2 rounded-xl text-3xl">Reset</button>
+        </div>
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>
