@@ -67,10 +67,10 @@ Changer.textContent = shortQuotes[random]
 }
 button.addEventListener('click',()=>{
 
-if(!intervalId){
+// if(!intervalId){
     timer()
-  intervalId =   setInterval(timer,4000)
-}
+  // intervalId =   setInterval(timer,4000)
+// }
 
 })
 
