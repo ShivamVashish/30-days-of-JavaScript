@@ -46,7 +46,7 @@ btnRoll.addEventListener('click',()=>{
         totalplayer[activeplayer] +=  currentscore;
         document.querySelector(`#score--${activeplayer}`).textContent = totalplayer[activeplayer]
         currentscore = 0;
-        if(totalplayer[activeplayer] >= 10){
+        if(totalplayer[activeplayer] >= 100){
             playing = false;
         document.querySelector(`#player--${activeplayer}`).classList.add('Winner')
         h1msg.textContent = `Winner Player ${activeplayer + 1}`
