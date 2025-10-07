@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static To-Do List with IDs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Custom style for the checked state */
+        .task-done {
+            text-decoration: line-through;
+            color: #9ca3af; /* gray-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8 bg-gray-500">
+
+    <div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow-2xl">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">My Tasks 📋</h1>
+
+        <div class="flex mb-6" id="add-task-form">
+            <input type="text" 
+                   placeholder="Add a new task..."
+                   id="new-task-input"  class="text-2xl flex-grow p-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+            <button id="add-task-button" class="bg-gray-500 text-white p-3 rounded-r-lg hover:bg-blue-600 transition duration-300 font-medium">Add</button>
+        </div>
+        
+        <ul id="todo-list-container" class="space-y-3"> 
+        </ul>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
